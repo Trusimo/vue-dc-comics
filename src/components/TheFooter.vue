@@ -77,7 +77,6 @@ export default {
         display: flex;
         position: relative;
         color: white;
-        padding: 30px;
     }
 
     .dc-big {
