@@ -18,16 +18,16 @@ export default {
   data() {
     return {
       navitems: [
-        "Characters",
-        "Comics",
-        "Movies",
+        "CHARACTERS",
+        "COMICS",
+        "MOVIES",
         "TV",
-        "Games",
-        "Collectibles",
-        "Videos",
-        "Fans",
-        "News",
-        "Shop"
+        "GAMES",
+        "COLLECTIBLES",
+        "VIDEOS",
+        "FANS",
+        "NEWS",
+        "SHOP"
       ]
     }
   }
@@ -46,6 +46,11 @@ export default {
     display: flex;
     justify-content: space-between;
     margin: 30px;
+
+  // da sistemare ma è per provare l'&:hover
+    &:hover{
+      color:rgb(14, 48, 184);
+    }
   }
 
   .flex {
