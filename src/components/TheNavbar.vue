@@ -1,8 +1,13 @@
 <template>
   <div class="container">
-    <div class="navbar" v-for="item in navitems">
-    <img alt="DC Logo" :src="require('../assets/img/dc-logo.png')" />
-      ciao
+    <div class="navbar">
+
+      <img alt="DC Logo" :src="require('../assets/img/dc-logo.png')" />
+
+    
+        <ul class="flex" v-for="(navitem, index) in navitems" :key="index">
+          <li>{{navitem}}</li>
+        </ul>
     </div>
   </div>
 </template>
@@ -13,9 +18,9 @@ export default {
   data() {
     return {
       navitems: [
-        "characters",
-        "comics",
-        "movies",
+        "Characters",
+        "Comics",
+        "Movies",
         "TV",
         "Games",
         "Collectibles",
@@ -32,9 +37,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  ul {
+    list-style: none;
+  }
+  
   .navbar {
     background-color: white;
     display: flex;
     justify-content: space-between;
+  }
+
+  .flex {
+    display: flex;
+    gap: 10px;
   }
 </style>
