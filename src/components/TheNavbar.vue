@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <img alt="DC Logo" :src="require('..assets/dc-logo.png')" />
-    <div class="navbar">
+    <div class="navbar" v-for="item in navitems">
+    <img alt="DC Logo" :src="require('../assets/img/dc-logo.png')" />
       ciao
     </div>
   </div>
@@ -13,7 +13,16 @@ export default {
   data() {
     return {
       navitems: [
-
+        "characters",
+        "comics",
+        "movies",
+        "TV",
+        "Games",
+        "Collectibles",
+        "Videos",
+        "Fans",
+        "News",
+        "Shop"
       ]
     }
   }
@@ -24,6 +33,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   .navbar {
+    background-color: white;
     display: flex;
+    justify-content: space-between;
   }
 </style>
