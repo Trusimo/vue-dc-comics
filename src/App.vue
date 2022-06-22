@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <TheNavbar></TheNavbar>
+    <ComicsContainer></ComicsContainer>
     <TheFooter></TheFooter>
     <TheBanner></TheBanner>
   </div>
@@ -10,13 +11,15 @@
 import TheNavbar from "./components/TheNavbar.vue";
 import TheFooter from "./components/TheFooter.vue";
 import TheBanner from "./components/TheBanner.vue";
+import ComicsContainer from "./components/ComicsContainer.vue";
 
 export default {
   name: 'App',
   components: {
     TheNavbar,
+    ComicsContainer,
     TheFooter,
-    TheBanner
+    TheBanner,
 }
 }
 </script>
