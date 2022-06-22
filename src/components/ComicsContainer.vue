@@ -1,15 +1,19 @@
 <template>
     <div class="container comics-box">
-        
+        <div class="card" v-for="(comic, index) in comics" :key="index">
+            <ComicsCard> {{ comic }}</ComicsCard>
+        </div>
     </div>
 </template>
 
 <script>
+import ComicsCard from "./ComicsCard.vue"
+
 export default {
     name: "ComicsContainer",
     data() {
         return {
-            Comics: [
+            comics: [
                 {
                     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
                     "price": "$19.99",
@@ -83,10 +87,9 @@ export default {
                     "type": "graphic novel"
                 }
             ]
-
-        }
-    }
-    
+        };
+    },
+    components: { ComicsCard }
 }
 </script>
 
