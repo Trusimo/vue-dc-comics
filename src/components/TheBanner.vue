@@ -3,7 +3,7 @@
         <button>SIGN UP NOW</button>
 
         <div class="socials">
-            <h4>FOLLOW US</h4>
+            <h5>FOLLOW US</h5>
             <img class="social-icons" :src="require('../assets/img/footer-facebook.png')" />
             <img class="social-icons" :src="require('../assets/img/footer-twitter.png')" />
             <img class="social-icons" :src="require('../assets/img/footer-youtube.png')" />
@@ -34,6 +34,7 @@ export default {
     background-color: #303030;
     padding: 30px;
     position: fixed;
+    right: 99px;
     width: 100%
 }
 
@@ -52,6 +53,7 @@ button {
 .socials {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 20px;
 }
 
@@ -60,7 +62,7 @@ button {
     height: 40px;
 }
 
-h4 {
+h5 {
     color: #1a68e8;
 }
 </style>

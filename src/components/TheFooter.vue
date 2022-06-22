@@ -5,7 +5,7 @@
 
         <div class="row flex">
             <div class="col-2">
-                <h5>DC COMICS</h5>
+                <h5 class="text-center">DC COMICS</h5>
                 <ul v-for="(item, index) in dccomicslist" :key="index">
                     <li>{{item}}</li>
                 </ul>
